@@ -1,0 +1,39 @@
+
+html,body,.container-fluid {
+  height:100%;
+}
+
+.ngram-col {
+  text-align: center;
+  padding-top: 30%;
+  padding-bottom: 30%;
+
+}
+
+.ngram-col p {
+  text-shadow: 3px 3px 1px #eeeeee;
+  font-size: 48pt;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+#col-left {
+  background-color: lightgoldenrodyellow;
+}
+
+#col-center {
+  background-color: lightsalmon;
+}
+
+#col-right {
+  background-color: lightcoral;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
