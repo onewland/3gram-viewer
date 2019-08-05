@@ -22,12 +22,12 @@ export default class ThreeGram extends React.Component {
     componentDidMount() {
         this.timerID = setInterval(
           () => this.tick(),
-          5000
+          1000
         );
 
         setInterval(
             () => this.randomColorChange(),
-            1000
+            5000
         );
         this.tick();
     }
@@ -68,20 +68,20 @@ export default class ThreeGram extends React.Component {
     }
 
     render() {
-      var ngram = this.state.ngram;
-      var colors = this.state.cell_colors;
-      return (
-        <div className="row">
-            <div style={{backgroundColor: colors[0]}} className="col-sm ngram-col no-float" id="col-left">
-                <p>{ngram[0]}</p>
+        var ngram = this.state.ngram;
+        var colors = this.state.cell_colors;
+        return (
+            <div className="row">
+                <div style={{backgroundColor: colors[0]}} className="col-sm ngram-col no-float" id="col-left">
+                    <p>{ngram[0]}</p>
+                </div>
+                <div style={{backgroundColor: colors[1]}} className="col-sm ngram-col no-float" id="col-center">
+                    <p>{ngram[1]}</p>
+                </div>
+                <div style={{backgroundColor: colors[2]}} className="col-sm ngram-col no-float" id="col-right">
+                    <p>{ngram[2]}</p>
+                </div>
             </div>
-            <div style={{backgroundColor: colors[1]}} className="col-sm ngram-col no-float" id="col-center">
-                <p>{ngram[1]}</p>
-            </div>
-            <div style={{backgroundColor: colors[2]}} className="col-sm ngram-col no-float" id="col-right">
-                <p>{ngram[2]}</p>
-            </div>
-        </div>
-      );
+        );
     }
 }
