@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+import { env } from './env';
 
 export default class ThreeGram extends React.Component {
     constructor(props) {
@@ -57,7 +58,7 @@ export default class ThreeGram extends React.Component {
     }
 
     tick() {
-        Axios.get("http://localhost:8080/ngram")
+        Axios.get(`http://${env['host']}:8080/ngram`)
         .then((response) => {
             var data = response.data;
             this.setState({

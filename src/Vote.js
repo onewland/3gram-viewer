@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+import { env } from './env';
 
 export default class Vote extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ export default class Vote extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get("http://localhost:8080/ngram")
+        Axios.get(`http://${env['host']}:8080/ngram`)
         .then((response) => {
             var data = response.data;
             this.setState({
@@ -31,7 +32,7 @@ export default class Vote extends React.Component {
             return;
         }
         console.log("attempting vote");
-        Axios.post("http://localhost:8080/ngram/" + id + "/vote")
+        Axios.post(`http://${env['host']}:8080/ngram/${id}/vote`)
         .then((response) => {
             this.setState({
                 vote_state: "voted"

@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+import { env } from './env';
 
 const TableRow = ({row}) => {
     return (
@@ -19,7 +20,7 @@ export default class Leaderboard extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get("http://localhost:8080/ngram/leaders")
+        Axios.get(`http://${env['host']}:8080/ngram/leaders`)
         .then((response) => {
             var data = response.data;
             console.log(data)
