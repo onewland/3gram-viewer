@@ -42,8 +42,13 @@ function Home() {
 
 function ThreeGramInst() {
   return (
-    <div className="container-fluid">
-      <ThreeGram />
+    <div class="page">
+      <div className="container-fluid">
+        <ThreeGram />
+      </div>
+      <div className="floater-voter">
+        <p>Vote for me: http://100over3.com/</p>
+      </div>
     </div>
   );
 }
