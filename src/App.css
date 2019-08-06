@@ -20,7 +20,7 @@ html,body,.container-fluid {
 .center {
   text-align: center;
   list-style-position: inside;
-  font-size:  5em;
+  font-size: 4em;
 }
 
 .middle-row-vote-page {
@@ -34,7 +34,7 @@ html,body,.container-fluid {
 .floater-voter {
   position: fixed;
   border-radius: 10px;
-  bottom: 10px;
+  bottom: 20px;
   padding: 20px 10px 10px 10px;
   font-weight: 900;
   left: 30%;
