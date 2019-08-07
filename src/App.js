@@ -21,12 +21,12 @@ function App() {
 function Home() {
   return (
     <div className="container-fluid">
-      <div class="row"> 
+      <div className="row"> 
         <div className="center col">
           <p>💯/3</p>
         </div>
       </div>
-      <div class="row">
+      <div className="row">
         <div className="col">
           <ol className="center" style={{alignItems: "center"}}>
             <li><Link to="/vote">Vote</Link></li>

@@ -23,6 +23,10 @@ html,body,.container-fluid {
   font-size: 4em;
 }
 
+.center li {
+  font-size: 0.75em;
+}
+
 .middle-row-vote-page {
   padding-top: 100px;
   padding-bottom: 100px;
