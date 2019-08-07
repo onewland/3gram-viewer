@@ -65,7 +65,7 @@ export default class Vote extends React.Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col">
-                        <h1 style={{textAlign: "center"}}>🇺🇸🇫🇷🇧🇸&nbsp;&nbsp;&nbsp;VOTE&nbsp;&nbsp;&nbsp;🇨🇦🇬🇧🇲🇦</h1>
+                        <h1 style={{textAlign: "center"}}>🇺🇸🇫🇷🇧🇸<br/>VOTE<br/>🇨🇦🇬🇧🇲🇦</h1>
                     </div>
                 </div>
                 <div className="row middle-row-vote-page">
