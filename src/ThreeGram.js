@@ -21,6 +21,15 @@ export default class ThreeGram extends React.Component {
     }
 
     componentDidMount() {
+        document.addEventListener("keydown", (event) => {
+            if(event.key === 'a') {
+                console.log(event.keyCode);
+                Axios
+                  .post(`http://${env['host']}:8080/ngram/advance`)
+                  .then((response) => this.tick())
+            }
+        });
+
         this.timerID = setInterval(
           () => this.tick(),
           1000

@@ -52,7 +52,7 @@ export default class Leaderboard extends React.Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {leaders.map(row => <TableRow row={row} />)}
+                                {leaders.map((row) => <TableRow row={row} />)}
                             </tbody>
                         </table>
                     </div>

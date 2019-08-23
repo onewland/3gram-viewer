@@ -65,3 +65,7 @@ html,body,.container-fluid {
     transform: rotate(360deg);
   }
 }
+
+#leaderboard>tbody>tr:nth-child(3) {
+  background-color: lightgoldenrodyellow;
+}
